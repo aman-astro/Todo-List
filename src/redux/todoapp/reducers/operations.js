@@ -21,7 +21,6 @@ export const operationReducer = (state=initialState,action) =>{
             const updatedArray=[];
             state.map((item)=>{
                 if(item.id===data.id){
-                    item.id = data.id;
                     item.todo = data.todo;
                     item.completed = data.completed;
                 }

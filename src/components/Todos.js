@@ -14,7 +14,7 @@ export const Todos = ({handleEditClick,editFormVisibility}) =>{
         <div className='content'>
             {editFormVisibility===false && (
                 <input type="checkbox" checked={todo.completed}
-                onChange={()=>handleCheckbox(todo.id)}></input>
+                onChange={()=> (dispatch(handleCheckbox(todo.id)))}></input>
             )}
             <p style={todo.completed===true?{textDecoration:'line-through'}:{textDecoration:'none'}}>
                 {todo.todo}

@@ -14,7 +14,7 @@ export const Form = ({editFormVisibility,editTodo,cancelUpdate}) =>{
         let date = new Date();
         let time = date.getTime();
         let todoObj = {
-            id: '',
+            id: time,
             todo : todoValue,
             completed: false
         }
